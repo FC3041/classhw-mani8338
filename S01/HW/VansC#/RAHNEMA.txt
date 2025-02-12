@@ -1,0 +1,63 @@
+Exercise 1.0: 'Hello World' is in folder 1.0/HelloWorld 
+
+Exercise 2.0: RocketShip is in folder 2.0/RocketShip
+
+Exercise: RocketShip With Functions is in folder 2.2/RocketShipFactored
+
+Exercise: Parameterized RocketShip is in folder 2.3/RocketShipLong
+
+Exercise: Geometric ASCII Art is in folder 2.4/Triangle
+
+Exercise: Manipulating Numbers part 1 is in folder 2.5/FToC
+Exercise: Manipulating Numbers part 2 is in folder 2.5/CToF
+Exercise: Manipulating Numbers part 3 is in folder 2.5/Factorial
+Exercise: Manipulating Numbers part 4 is in folder 2.5/Factorial
+Exercise: Manipulating Numbers part 5 is in folder 2.5/power
+Exercise: Manipulating Numbers part 6 is in folder 2.5/quadradic
+Exercise: Manipulating Numbers part 7 is in folder 2.5/AverageOfSquares
+Exercise: Manipulating Numbers part 8 is in folder 2.5/AverageOfSquares
+
+Exercise: If statements part 1 is in folder 2.6/LeapYear
+Exercise: If statements part 2 is in folder 2.6/MoreAsciiiArt
+Exercise: If statements part 3 is in folder 2.6/MoreAsciiiArt
+Exercise: If statements part 4 is in folder 2.6/MoreAsciiiArt
+Exercise: If statements part 5 is in folder 2.6/Calender
+Exercise: If statements part 6 is in folder 2.6/ComputeChange
+Exercise: If statements part 7 is in folder 2.6/Pythagorean
+
+Exercise: Return Values Everywhere! part 1 is in folder 2.7/absolute
+Exercise: Return Values Everywhere! part 2 is in folder 2.5/Factorial
+Exercise: Return Values Everywhere! part 3 is in folder 2.7/prime
+Exercise: Return Values Everywhere! part 4 is in folder 2.7/prime
+Exercise: Return Values Everywhere! part 5 is in folder 2.7/fibonacci
+Exercise: Return Values Everywhere! part 6 is in folder 2.7/Date
+Exercise: Return Values Everywhere! part 7 is in folder 2.6/LeapYear
+Exercise: Return Values Everywhere! part 8 is in folder 2.7/Date
+Exercise: Return Values Everywhere! part 9 is in folder 2.7/Date
+
+Exercise: Debugger part 1 is in folder 2.8/sum
+
+Exercise: Assertions part 1 is in folder 2.5/Factorial Lines 7 and 12
+Exercise: Assertions part 2 is in folder 2.7/prime Line 16
+
+Exercise: While Loops part 1 is in folder 2.10/math
+Exercise: While Loops part 2 is in folder 2.10/math
+Exercise: While Loops part 3 is in folder 2.10/math
+Exercise: While Loops part 3A is in folder 2.10/math
+Exercise: While Loops part 3B is in folder 2.10/math
+Exercise: While Loops part 4 is in folder 2.10/math
+Exercise: While Loops part 5 is in folder 2.10/math
+Exercise: While Loops part 6 is in folder 2.10/math
+Exercise: While Loops part 7 is in folder 2.10/math
+Exercise: While Loops part 8 is in folder 2.10/stats
+
+
+
+
+
+
+
+
+
+
+
