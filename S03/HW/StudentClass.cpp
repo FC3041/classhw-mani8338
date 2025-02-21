@@ -61,6 +61,12 @@ class Student{
             m_CourseName[m_CoursesPassed] = namecopy;
             m_CoursesPassed++;
         }
+
+        ~Student(){
+            for(int i = 0; i < m_CoursesPassed; i++){
+                delete[]m_CourseName[i];
+            }
+        }
 };
 
 int main()
