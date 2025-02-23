@@ -109,7 +109,7 @@ int main()
     int length3 = 7;
     int length4 = 4;
     // pop
-    double nums5[8] = {1,2,3,4,5,6,7,8};
+    double nums5[8] = {1,2,3,87,5,41,7,8};
     int length5 = 8;
     // count
     double nums6[10] = {1,2,3,6,6,6,1,6,9,6};
