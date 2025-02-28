@@ -6,18 +6,22 @@ using namespace std;
 class List{
     public:
         int m_length;
+        int m_capacity;
         double* m_nums;
 
-        List(int size,double* nums):m_length(size){
-            m_nums = (double*)malloc(sizeof(double)*m_length);
+        List():m_length(0),m_capacity(0),m_nums(nullptr){}
+
+        List(int size,double* nums):m_length(size),m_capacity(size){
+            m_nums = (double*)malloc(sizeof(double)*m_capacity);
             for(int i = 0; i < m_length; i++){
                 *(m_nums+i) = *(nums+i);
             }
         }
+        ~List(){free(m_nums);}
 
         void print_List()
         {
-            cout <<"[";
+            cout <<"[";    
             for(int i = 0; i < m_length; i++){
                 if(i == m_length-1){
                     cout << m_nums[i] <<"]" << endl;
@@ -25,20 +29,29 @@ class List{
                 else{
                     cout << m_nums[i] << ", ";
                 }               
-            }
+            }    
         }
+        
         private:
             void resize(double newSize)
             {
                 m_nums = (double*)realloc(m_nums,sizeof(double)*newSize);
                 m_length = newSize;
             }
+
+            void resize2() {
+            if(m_capacity == 0){
+                m_capacity = 1;
+            }else{
+                m_capacity *= 2;
+            }m_nums = (double*)realloc(m_nums,sizeof(double) * m_capacity);
+            }
+
         public:
-            void append(int n)
-            {
-                m_length++;
-                m_nums = (double*)realloc(m_nums,sizeof(double)*m_length);
-                *(m_nums+m_length-1) = n;
+            void append(int n) {
+            if(m_length >= m_capacity){
+                resize2();
+            }m_nums[m_length++] = n;
             }
 
             void add_Lists(List L2)
@@ -92,7 +105,13 @@ class List{
                 for(int i = 0; i < m_length; i++){
                     *(m_nums+i) = *(newArray+m_length-i-1);
                 }
-            }       
+            }  
+
+            void clear()
+            {
+                m_length = 0;
+                m_nums = nullptr;
+            }     
 };
 
 int main()
@@ -120,6 +139,10 @@ int main()
     // reverse
     double nums8[5] = {7,7,9,5,5};
     int length8 = 5;
+    // clear
+    double nums9[7] = {0x83,0x93,0x88,0x78,0x65,0x87,0x87};
+    int lenght9 = 7;
+
     
     cout << "        Print List1" << endl;
     List L1(length,nums);
@@ -160,6 +183,12 @@ int main()
     List L8(length8,nums8);
     L8.reverse();
     L8.print_List();
+    cout << "" << endl;
+
+    cout << " clear " << endl;
+    List L9(lenght9,nums9);
+    L9.clear();
+    L9.print_List(); 
 
 
     return 0;
