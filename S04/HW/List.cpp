@@ -31,7 +31,7 @@ class List{
                 }               
             }    
         }
-        
+
         private:
             void resize(double newSize)
             {
@@ -111,7 +111,13 @@ class List{
             {
                 m_length = 0;
                 m_nums = nullptr;
-            }     
+            }  
+
+            double at(int n)
+            {
+                n = n % (m_length-1);
+                return m_nums[n];
+            }   
 };
 
 int main()
@@ -142,6 +148,9 @@ int main()
     // clear
     double nums9[7] = {0x83,0x93,0x88,0x78,0x65,0x87,0x87};
     int lenght9 = 7;
+    // at
+    double nums10[8] = {0x84,93,88,81,45,96,7,5461};
+    int length10 = 8;
 
     
     cout << "        Print List1" << endl;
@@ -189,6 +198,14 @@ int main()
     List L9(lenght9,nums9);
     L9.clear();
     L9.print_List(); 
+    cout << "" << endl;
+
+    cout << "at" << endl;
+    List L10(length10,nums10);
+    L10.print_List();
+    cout<< L10.at(5) << endl;
+    cout<< L10.at(10) << endl;
+
 
 
     return 0;
